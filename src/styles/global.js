@@ -5,13 +5,13 @@ export default createGlobalStyle`
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     outline: 0;
+     outline: 0;     
   }
 
   body {
-    background: #312e38;
+    background: black;
     color: #FFF;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;    
   }
 
   body, input, button {         
