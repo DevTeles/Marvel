@@ -107,13 +107,15 @@ export const Pagination = styled.div`
 
 export const Footer = styled.div`    
   margin-top: 30px;
-  padding: 20px 20px;
-  width: 100% !important;
-  height: 130px;
+  padding-top: 20px;  
+  height: 120px;
   background: #312e38;
-  
+  display: flex;
+  justify-content: space-around;
 
-  div {
-    background: #312e38;
+  img {
+    border-radius: 10px;
+    width: 200px;      
   }
+ 
 `;

@@ -5,6 +5,8 @@ import { Container, List, Item, Header, Footer, Pagination, Title } from './styl
 import { Link } from 'react-router-dom';
 
 import MarvelLogo from '../../assets/MarvelLogo.png';
+import GitHub from '../../assets/github.png';
+import Linkedin from '../../assets/linkedin.jpeg';
 
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -14,9 +16,9 @@ export default function Characters() {
     async function load() {
       const response = await api.get('characters', {
         params: {
-          ts: '1',
-          apikey: 'a8f26c9262cee8b030a65c0a928ecbb1',
-          hash: '04cb0ae8317b318fc29ffdb30af4fe23',
+          ts: process.env.REACT_APP_TS,
+          apikey: process.env.REACT_APP_API_KEY,
+          hash: process.env.REACT_APP_HASH,
           offset,
           //limit: 6
         }
@@ -40,9 +42,9 @@ export default function Characters() {
 
     const response = await api.get('characters', {
       params: {
-        ts: '1',
-        apikey: 'a8f26c9262cee8b030a65c0a928ecbb1',
-        hash: '04cb0ae8317b318fc29ffdb30af4fe23',
+        ts: process.env.REACT_APP_TS,
+        apikey: process.env.REACT_APP_API_KEY,
+        hash: process.env.REACT_APP_HASH,
         //limit: 6
       }
     });
@@ -89,11 +91,12 @@ export default function Characters() {
         </Pagination>
       </Container >
       <Footer>
-        <div>
-          <p>Autor: Rafael Teles Vital</p>
-          <p>GitHub</p>
-          <p>Linkedin</p>
-        </div>
+        <a href="https://github.com/DevTeles">
+          <img src={GitHub} alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/rafael-teles-vital-9002946a/" >
+          <img src={Linkedin} alt="GitHub" />
+        </a>
       </Footer>
     </>
   );

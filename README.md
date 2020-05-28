@@ -5,17 +5,26 @@
 
 [![Author](https://img.shields.io/badge/author-Devteles-363f5f?style=flat-square)](https://github.com/devteles)
 
+<p align="center">
+   <img src="src/assets/foto1.png" />
+</p>
+<p align="center">
+   <img src="src/assets/foto2.png" />
+</p>
+<p align="center">
+   <img src="src/assets/foto3.png" />
+</p>
+
+
 # `Indice`
 
-<a href="#React">1. React</a> <br />
+<a href="#Escopo">1. Escopo</a> <br />
 <a href="#Tecnologias-utilizadas">2. Tecnologias utilizadas</a> <br />
-<a href="#Como-baixar-o-projeto">3. Como baixar o projeto</a>
+<a href="#Como-baixar-e-executar-o-projeto">3. Como baixar e executar o projeto</a>
 
-## React
+## Escopo
 
-Esse é um aplicativo de marketplace, o app se chama `**GoMarketplace**`, ele terá as funcionalidades de carregar os produtos, adicionar ao carrinho e remover, sempre atualizando os valores de quantidade, subtotal e total.
-
-É uma aplicação que se conectar com uma API Faker.
+Este é um simples exemplo de como consumir a API da Marvel, consultar personagens da marvel e suas series relacionadas.
 
 ---
 
@@ -23,16 +32,26 @@ Esse é um aplicativo de marketplace, o app se chama `**GoMarketplace**`, ele te
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- React-Native
-- Axios
-- TypeScript
-- Styled-Components
-- ReactIcons
-- react-navigation
-- json-server
+- react: Por ser uma tecnologia que mais está crescendo e ganhado o mercado;
+
+- axios: Utilizado para consumir a api, pois é simples de se usar;
+
+- styled-components: Para colocar css no layout, também muito simples de utilizar;
+
+- react-icons: Inclua ícones populares nos projetos do react facilmente com o react-icons;
+
+- react-navigation:
+
+- dotenv: Para cada desenvolvedor usar as suas credenciais de acesso, ou endereços diferente que existem em cada máquina;
+
+- react-responsive-carousel: Para exibir uma coloções de series num formato bacana, fácil utilização dela também;
+
+- react-router-dom: Para criar as routas do projeto;
+
+- jest: Uma biblioteca também de fácil de aprender e começar a utilizar, precisamos deixar testado sempre o máximo possível necessário o projeto, para futura atualização em produção isso é sensacional. 
 
 ---
-## Como baixar o projeto
+## Como baixar e executar o projeto
 
 
 ```bash
@@ -45,6 +64,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
   # Instalar as dependências
   $ yarn
+
+  # Criar arquivo ".env" na raiz do projeto e preencher as variavéis de ambiente, que são as credenciais para acessar API da Marvel
+  # Dúvida consultar link: (https://developer.marvel.com/docs)
 
   # Iniciar o projeto  
   $ yarn start

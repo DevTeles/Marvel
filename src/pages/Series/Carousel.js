@@ -13,9 +13,9 @@ export default function Carousel({ match }) {
       if (match !== undefined) {
         const response = await api.get(match.url, {
           params: {
-            ts: '1',
-            apikey: 'a8f26c9262cee8b030a65c0a928ecbb1',
-            hash: '04cb0ae8317b318fc29ffdb30af4fe23',
+            ts: process.env.REACT_APP_TS,
+            apikey: process.env.REACT_APP_API_KEY,
+            hash: process.env.REACT_APP_HASH,
           }
         });
 
@@ -32,7 +32,7 @@ export default function Carousel({ match }) {
 
   return (
     <Container>
-      <TagCarousel autoPlay width="650px">
+      <TagCarousel autoPlay width={series.length > 7 ? 380 : 650}>
         {series.map(serie => (
           <div key={serie.id}>
             <img src={serie.thumbnail.path + '.' + serie.thumbnail.extension} alt={serie.title} />
@@ -41,6 +41,6 @@ export default function Carousel({ match }) {
 
         ))}
       </TagCarousel>
-    </Container>
+    </Container >
   );
 };

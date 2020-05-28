@@ -11,12 +11,12 @@ export default createGlobalStyle`
   body {
     background: black;
     color: #FFF;
+    font-family: 400 14px Oswald, sans-serif;
     -webkit-font-smoothing: antialiased;    
   }
 
   body, input, button {         
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 16px;
+    font-family: 400 14px Oswald, sans-serif;    
   }
 
   h1, h2, h3, h4, h5, h6, strong {
@@ -25,5 +25,10 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+    transition: filter 0.2s;
+
+   &:hover {
+    filter: brightness(90%);
+   }
   }
 `;
