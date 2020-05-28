@@ -15,6 +15,9 @@
    <img src="src/assets/foto3.png" />
 </p>
 
+Acesse o link abaixo do deploy: 
+
+<a href="https://inspiring-pike-9d0e9c.netlify.app/">Site<a>
 
 # `Indice`
 
