@@ -8,57 +8,85 @@ export const Container = styled.div`
   max-width: 90%;  
 `;
 
-export const List = styled.ul`      
+export const List = styled.ul`   
+  width: 0 auto;   
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;  
-  list-style: none;    
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;    
+  list-style: none; 
+
+  @media (max-width: 1600px) {    
+    display: flex;
+    flex-wrap: wrap;    
+    
+    li {
+      margin-right: 15px;
+    }
+  }
 `;
 
-export const Item = styled.li`  
-  margin-left: 45px;
-  max-width: 90%;
-  border-radius: 6px;
-  margin-top: 10px;  
+export const Item = styled.li`    
+  margin-top: 10px;     
+  max-width: 230px; 
+  box-sizing: border-box;
+  overflow: hidden;
+  
 
   &:hover {
-    border: 3px solid #ff9000;
+
+    div {
+      background: #e62429;
+      color: #fff;
+    }
   }
 
   img {
-    width: 390px;
-    height: 250px;   
-    border-radius: 6px;  
+    width: 0 auto;
+    max-width: 230px;
+    height: 300px; 
+    display: block;
+    transition: transform ease 0.3s;
+
+    &:hover {
+      border: 1px solid #ff9000;    
+      transform: scale(1.1);
+    }
   }
 `
 
-export const Title = styled.p`
-  font-size: 24px;
-  color: #FFF;
-  text-align: center;
+export const Descricao = styled.div`
+  width: 0 auto;
+  max-width: 230px;
+  /* padding-top: 23px; */
+  background: #393939;  
+  height: 100px;
+  display: flex;  
+  place-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+  }
 `;
 
-export const Header = styled.div`
-  margin-bottom: 30px;
+export const Header = styled.div`  
   display: flex;
-  justify-content: space-between;
-  margin-right: 300px;
-  width: 100%;
-  height: 100px;
+  justify-content: space-between;    
+  background: #393939;
 
   img {    
     margin: 15px 45px;
     width: 130px;
-    height: 70px;
-    border-radius: 4px;
+    height: 70px;    
   }
 
   div { 
     margin: 30px;
     display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-self: center;
+    justify-content: center;   
+    place-items: center;    
 
     input {          
       padding-left: 25px;
@@ -76,7 +104,7 @@ export const Header = styled.div`
     height: 50px;
 
     svg {
-      height: 20px;
+      height: 18px;
     }
   }
 `;
