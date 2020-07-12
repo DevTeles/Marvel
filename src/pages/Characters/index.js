@@ -81,7 +81,7 @@ export default function Characters() {
             <Input
               style={{ fontSize: 26 }}
               onKeyUp={(e) => handleSearch(e)}
-              placeholder="Pesquisa um personagem"
+              placeholder="Search"
               type="text"
               name="search"
             />

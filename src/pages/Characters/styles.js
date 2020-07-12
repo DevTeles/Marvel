@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  margin: 0 150px;
+export const Container = styled.div`  
   flex: 1;
   justify-content: center;
-  justify-items: center;
-  max-width: 90%;  
+  justify-items: center;  
 `;
 
 export const Input = styled.input`
@@ -14,7 +12,8 @@ export const Input = styled.input`
   }
 `;
 
-export const List = styled.ul`   
+export const List = styled.ul` 
+  margin: 0 120px;   
   width: 0 auto;   
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -23,10 +22,11 @@ export const List = styled.ul`
 
   @media (max-width: 1600px) {    
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
+    gap: 6px;
     
     li {
-      margin-right: 15px;
+      margin-right: 5px;
     }
   }
 `;
@@ -80,7 +80,10 @@ export const Descricao = styled.div`
 export const Header = styled.div`  
   display: flex;
   justify-content: space-between;    
-  background: #393939;
+  background: #393939; 
+  padding: 0;
+  margin: 0;
+  width: 100%; 
 
   img {    
     margin: 15px 45px;
@@ -89,7 +92,7 @@ export const Header = styled.div`
   }
 
   div { 
-    margin: 30px;
+    margin: 10px;
     display: flex;
     justify-content: center;   
     place-items: center;    
@@ -97,7 +100,7 @@ export const Header = styled.div`
     input {          
       padding-left: 25px;
       margin-right: 10px;
-      width: 500px;
+      width: 40vw;
       height: 50px;
       border-radius: 4px;
       font-size: 22px;
