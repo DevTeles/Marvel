@@ -2,8 +2,7 @@
    <img src="src/assets/MarvelLogo.png" width="200"/>
 </p>
 
-
-[![Author](https://img.shields.io/badge/author-Devteles-363f5f?style=flat-square)](https://github.com/devteles)
+<h1>Resultado</h1>
 
 <p align="center">
    <img src="src/assets/foto1.png" />
@@ -15,8 +14,7 @@
    <img src="src/assets/foto3.png" />
 </p>
 
-Acesse o link abaixo do deploy: 
-
+Deploy:
 <a href="https://inspiring-pike-9d0e9c.netlify.app/">Site<a>
 
 # `Indice`
@@ -42,8 +40,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - styled-components: Para colocar css no layout, também muito simples de utilizar;
 
 - react-icons: Inclua ícones populares nos projetos do react facilmente com o react-icons;
-
-- react-navigation:
 
 - dotenv: Para cada desenvolvedor usar as suas credenciais de acesso, ou endereços diferente que existem em cada máquina;
 

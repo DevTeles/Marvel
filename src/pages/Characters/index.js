@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { FaSearch, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { Container, List, Item, Header, Footer, Pagination, Descricao } from './styles';
+import { Container, List, Item, Header, Footer, Pagination, Descricao, Input } from './styles';
 import { Link } from 'react-router-dom';
 
 import MarvelLogo from '../../assets/MarvelLogo.png';
@@ -37,6 +37,7 @@ export default function Characters() {
   };
 
   const handleSearch = async event => {
+    console.log('apertou Enter')
     event.preventDefault();
 
     if (event.keyCode === 13) {
@@ -76,9 +77,15 @@ export default function Characters() {
       <Container>
         <Header>
           <img src={MarvelLogo} alt="Marvel" />
-          <div style={{ background: '#f2f2f2' }}>
-            <FaSearch color="#393939" size={32} style={{ background: '#f2f2f2' }} />
-            <input onKeyUp={(e) => handleSearch(e)} placeholder="Pesquisa um personagem" type="text" name="search" />
+          <div>
+            <Input
+              style={{ fontSize: 26 }}
+              onKeyUp={(e) => handleSearch(e)}
+              placeholder="Pesquisa um personagem"
+              type="text"
+              name="search"
+            />
+            <FaSearch color="#FFF" size={32} />
           </div>
         </Header>
         <List>

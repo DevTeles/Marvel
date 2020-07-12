@@ -33,7 +33,7 @@
     "extends": "react-app"
   },
   "collectCoverageFrom": [
-    "!src/pages/Characters/index.js",
+    "src/pages/Characters/index.js",
     "!src/pages/Series/index.js"
   ],
   "coverageDirectory": "__tests__/coverage",

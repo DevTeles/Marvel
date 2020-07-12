@@ -31,14 +31,13 @@ export default function Carousel({ match }) {
   }, [match]);
 
   return (
-    <Container>
-      <TagCarousel autoPlay width={series.length > 7 ? 380 : 650}>
+    <Container style={{ height: 'auto' }} >
+      <TagCarousel autoPlay width={1200} showThumbs={false} showStatus={false} useKeyboardArrows >
         {series.map(serie => (
-          <div key={serie.id}>
-            <img src={serie.thumbnail.path + '.' + serie.thumbnail.extension} alt={serie.title} />
+          <div key={serie.id} style={{ height: '720px' }}>
+            <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={serie.thumbnail.path + '.' + serie.thumbnail.extension} alt={serie.title} />
             <p className="legend">{serie.title}</p>
           </div>
-
         ))}
       </TagCarousel>
     </Container >

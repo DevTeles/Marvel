@@ -8,6 +8,12 @@ export const Container = styled.div`
   max-width: 90%;  
 `;
 
+export const Input = styled.input`
+  &:focus {
+    border: 3px solid #ff9000;
+  }
+`;
+
 export const List = styled.ul`   
   width: 0 auto;   
   display: grid;
