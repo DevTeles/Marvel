@@ -103,7 +103,7 @@ export default function Characters() {
         <Pagination>
           <button
             type="button"
-            disabled={offset < 2}
+            disabled={offset < 1}
             onClick={() => handlePage('back')}
           >
             <FaChevronLeft />
@@ -116,10 +116,10 @@ export default function Characters() {
         </Pagination>
       </Container >
       <Footer>
-        <a href="https://github.com/DevTeles">
+        <a href="https://github.com/DevTeles" target="_blank" without rel="noopener noreferrer">
           <img src={GitHub} alt="GitHub" />
         </a>
-        <a href="https://www.linkedin.com/in/rafael-teles-vital-9002946a/" >
+        <a href="https://www.linkedin.com/in/rafael-teles-vital-9002946a/" target="_blank" without rel="noopener noreferrer" >
           <img src={Linkedin} alt="GitHub" />
         </a>
       </Footer>

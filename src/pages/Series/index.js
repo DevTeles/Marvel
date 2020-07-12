@@ -6,16 +6,18 @@ import { FaChevronLeft } from 'react-icons/fa';
 
 export default function Series({ match }) {
   return (
-    <Container>
+    <>
       <a href="/" style={{ textDecoration: 'none', padding: 0, margin: 0 }}>
         <FaChevronLeft size={30} color="#7159c1" style={{ margin: '40px' }} />
       </a>
-      <div style={{ margin: 30, display: 'flex', placeItems: 'center', justifyContent: 'center' }}>
+      <Container>
         <div>
-          <h1>Series com o personagem</h1>
-          <Carousel match={match} />
+          <div>
+            <h1>Series com o personagem</h1>
+            <Carousel match={match} />
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 }
