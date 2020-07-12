@@ -5,13 +5,13 @@
 <h1>Resultado</h1>
 
 <p align="center">
+   <img src="src/assets/foto.png" />
+</p>
+<p align="center">
    <img src="src/assets/foto1.png" />
 </p>
 <p align="center">
    <img src="src/assets/foto2.png" />
-</p>
-<p align="center">
-   <img src="src/assets/foto3.png" />
 </p>
 
 Deploy:
