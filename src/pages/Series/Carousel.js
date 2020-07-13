@@ -35,7 +35,7 @@ export default function Carousel({ match }) {
       <TagCarousel autoPlay width={1200} showThumbs={false} showStatus={false} useKeyboardArrows >
         {series.map(serie => (
           <div key={serie.id} style={{ height: '720px' }}>
-            <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={serie.thumbnail.path + '.' + serie.thumbnail.extension} alt={serie.title} />
+            <img src={serie.thumbnail.path + '.' + serie.thumbnail.extension} alt={serie.title} />
             <p className="legend">{serie.title}</p>
           </div>
         ))}

@@ -11,6 +11,7 @@ import Linkedin from '../../assets/linkedin.jpeg';
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
   const [offset, setOffSet] = useState(0);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     async function load() {
@@ -33,7 +34,14 @@ export default function Characters() {
   }, [offset]);
 
   const handlePage = async action => {
-    setOffSet(action === 'back' ? offset - 1 : offset + 1);
+    if (action === 'back') {
+      setOffSet(offset - 18);
+      setPage(page - 1);
+    } else {
+      setOffSet(offset + 18);
+      setPage(page + 1);
+    }
+
   };
 
   const handleSearch = async event => {
@@ -103,13 +111,13 @@ export default function Characters() {
         <Pagination>
           <button
             type="button"
-            disabled={offset < 1}
+            disabled={page === 1}
             onClick={() => handlePage('back')}
           >
             <FaChevronLeft />
             Anterior
           </button>
-          <span>Página {offset + 1}</span>
+          <span>Página {page}</span>
           <button type="button" onClick={() => handlePage('next')}>
             Proximo <FaChevronRight />
           </button>

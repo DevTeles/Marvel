@@ -14,6 +14,11 @@
    <img src="src/assets/foto2.png" />
 </p>
 
+<h1>Bônus</h1>
+<p align="center">
+   <img src="src/assets/test.png" />
+</p>
+
 Deploy:
 <a href="https://inspiring-pike-9d0e9c.netlify.app/">Site<a>
 
